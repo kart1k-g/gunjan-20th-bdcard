@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+body{
+    background-color: #dd105f;
+    /* background-color: rgb(171, 39, 90); */
+    color: aliceblue;
+}
+.countdown-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+}
+.ball{
+    width: 100px;
+}
