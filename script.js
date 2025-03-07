@@ -163,7 +163,21 @@ function beginWish(){
     addWishingPageAudio();
     runConfetti();
     setTimeout(typewriterEffectBDWish, 2000);
+    window.addEventListener("click", runConfetti1);
 }
+function runConfetti1(event) {
+    confetti({
+        particleCount: 50,
+        spread: 80,
+        origin: {
+            x: event.clientX / window.innerWidth,
+            y: event.clientY / window.innerHeight
+        }
+    });
+}
+
+// Add event listener to the entire document
+
 
 function fadeInElement(element) {
     element.style.opacity = "0";
