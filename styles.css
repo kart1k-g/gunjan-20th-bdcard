@@ -1,14 +1,24 @@
 *{
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     border: 0px;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    /* font-weight: 700; */
+    font-style: normal;
 }
+
 body{
     background-color: #dd105f;
     /* background-color: rgb(171, 39, 90); */
     color: aliceblue;
+    padding: 12px;
+    overflow: hidden;
+
 }
-.countdown-container{
+
+#countdown-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,6 +26,99 @@ body{
     font-size: 2rem;
     font-family: Arial, sans-serif;
 }
-.ball{
-    width: 100px;
+
+#wishing-container{
+    /* width: 100vw;
+    height: 100vh;
+    display: grid;
+     */
+
+}
+
+#top-wishing-container{
+    display: flex;
+    flex-direction: row-reverse;
+    /* justify-content: space-between; */
+    color: aliceblue;
+    /* z-index: 1; */
+    /* justify-content: flex-end; */
+    gap: 20px;
+}
+#record-img-container{
+    >img{
+        width: 100px;
+    }
+}
+
+#cake-container{
+    >img{
+        width: 280px;
+    }
+}
+
+.polaroid {
+    background-color: #fff;
+    width: 280px;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    >img {
+        /* width: 240px; */
+    }
+    
+    /* transform: translateX(50px); */
+    z-index: -1;
+}
+#polaroid-1{
+    transform: rotate(-15deg) translateX(30px) translateY(-50px);
+    >img{
+        height: 280px;
+    }
+}
+#polaroid-2{
+    transform: rotate(15deg) translateX(30px) translateY(50px);
+    >img{
+        height: 280px;
+    }
+}
+#polaroid-3{
+    >img{
+        height: 280px;
+    }
+}
+
+#middle-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 110px;
+    margin-top: 40px;
+}
+
+#bd-wish-container{
+    /* text-align: center; */
+    font-size: 4rem;
+    width: 22ch;
+
+    /* margin-top: 100px; */
+}
+
+
+#begin-page{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+#begin-btn{
+    padding: 12px;
+    font-size: 28px;
+    width: 15ch;
+    border-radius: 12px;
+}
+
+#bottom-container{
+    padding-left: 40px;
 }
